@@ -293,5 +293,51 @@ display: inline-block;
 
 #page3{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+ background-color: #efeae3;
+ padding: 4vw 0;
+
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.elem  h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: orange;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    background-color: saddlebrown;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 199;
+    left: 50%;
+    top: 25%;
+    display: none;
 }

@@ -333,11 +333,12 @@ display: inline-block;
 #fixed-image{
     height: 30vw;
     width: 24vw;
-    background-color: saddlebrown;
     border-radius: 10px;
     position: fixed;
     z-index: 199;
     left: 50%;
     top: 25%;
     display: none;
+    background-size: cover;
+    background-position: center;
 }

@@ -342,3 +342,53 @@ display: inline-block;
     background-size: cover;
     background-position: center;
 }
+
+#page4{
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 13px;
+    /* overflow-x: hidden; */
+}
+
+#page4 #left{
+    height: 100%;
+    width: 50%;
+    /* background-color:; */
+    padding-top: 150px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 110px;
+  color: white;
+}
+
+#page4 #left h2{
+    font-size: 4.3rem;
+    line-height: 0.8;
+    font-family: neu;
+    margin-bottom: 20px;
+}
+#page4 #left p{
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: neu;
+}
+
+#right {
+    position: relative;
+    object-fit: contain;
+    width: 50%;
+
+}
+img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+
+    
+}

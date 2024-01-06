@@ -88,6 +88,7 @@ html,body{
 
 #nav-part2 h4 a:hover{
     color: #fff;
+    position: relative;
 }
 
 #center{
@@ -357,7 +358,6 @@ display: inline-block;
 #page4 #left{
     height: 100%;
     width: 50%;
-    /* background-color:; */
     padding-top: 150px;
   padding-right: 30px;
   padding-bottom: 50px;
@@ -375,15 +375,16 @@ display: inline-block;
     font-size: 1rem;
     font-weight: 200;
     font-family: neu;
+    padding-top: 30px;
 }
 
-#right {
+#right1 {
     position: relative;
     object-fit: contain;
     width: 50%;
 
 }
-img{
+#right1 img{
     background-position: center;
     background-size: cover;
     border-radius: 20px;

@@ -5,8 +5,8 @@ const scroll = new LocomotiveScroll({
 
 
 
-
-var elemc = document.querySelector("#elem-container")
+function page5Animation(){
+    var elemc = document.querySelector("#elem-container")
 var fix = document.querySelector("#fixed-image")
 elemc.addEventListener("mouseenter",function(){
 fix.style.display="block"
@@ -23,3 +23,18 @@ elems.forEach(function(e){
     })
 
 })
+}
+
+
+
+
+  function swiperAnimation(){
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 100,
+      });
+  }
+
+  swiperAnimation()
+  page5Animation()

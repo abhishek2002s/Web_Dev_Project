@@ -26,7 +26,7 @@ html,body{
     transition:  all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     width: 10px;
     height: 10px;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     border-radius: 50%;
     background-color: white;
@@ -173,7 +173,7 @@ html,body{
     padding-right: 12vw;
 }
 
-#hero2 #elem{
+#hero2 .elem{
     width: 100%;
     border-top: 1px solid #888;
     color: white;
@@ -184,18 +184,18 @@ html,body{
     position: relative;
 
 }
-#elem h1{
+.elem h1{
     font-size: 8vw;
     text-transform: uppercase;
     font-family: General;
     opacity: .6;
 }
-#elem h5{
+.elem h5{
 font-size: 1vw;
 font-family: General;
 opacity: .9;
 }
-#elem img{
+.elem img{
     position: absolute;
     height: 150%;
     z-index: 999;

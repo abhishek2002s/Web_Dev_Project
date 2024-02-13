@@ -184,13 +184,19 @@ html,body{
     width: 45%;
     height: inherit;
     /* border: 1px solid grey; */
+
     
 }
 .fright .images{
-    width: 90%;
-    height: 90%;
-    background-color: aqua;
-    
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.fright .images img{
+    opacity: 12;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .fbutton{
@@ -247,7 +253,7 @@ html,body{
     overflow: hidden;
     width: 100%;
     height: 270px;
-    background-color: rgb(104, 28, 196);
+    /* background-color: rgb(104, 28, 196); */
     border-radius: 10px;
 
 }

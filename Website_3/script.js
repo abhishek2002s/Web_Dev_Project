@@ -36,5 +36,33 @@ elems.forEach(function(e){
       });
   }
 
-  swiperAnimation()
-  page5Animation()
+
+  function menuAnimation() {
+    var menu = document.querySelector("#nav h3");
+    var fullScr = document.querySelector("#full-scr");
+    var navImg = document.querySelector("#nav img");
+    var flag = 0
+    menu.addEventListener("click", function(){
+      if(flag == 0){
+     fullScr.style.top = 0;
+     navImg.style.opacity = 0
+     flag = 1;
+      }
+      else{
+        fullScr.style.top = "-100%";
+        navImg.style.opacity = 1;
+        flag = 0;
+      }
+    })
+  }
+  function loadAnimation(){
+  var load = document.querySelector('#loader')
+  setTimeout(function (){
+   load.style.top = "-100%"
+  },4000)
+  }
+
+  swiperAnimation();
+  page5Animation();
+menuAnimation();
+loadAnimation();

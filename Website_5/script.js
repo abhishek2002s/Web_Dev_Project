@@ -1,3 +1,5 @@
+// const { default: Shery } = require("sheryjs");
+
 Shery.mouseFollower();
 
 Shery.makeMagnet(".magnet,img");
@@ -36,3 +38,8 @@ gsap.to(".fleftelem", {
           });
       },
   });
+
+// Shery.imageEffect(".images img",{
+//     style:4,
+//     config:
+// })

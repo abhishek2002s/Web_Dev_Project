@@ -686,8 +686,9 @@ border-radius: 50%;
     }
 
 
-
-
+.text-scr{
+    display: none;
+}
 
 @media (max-width:600px) {
     
@@ -738,6 +739,7 @@ margin-top: 10px;
     z-index: 50;
     top: -100%;
     transition: all ease 0.8s;
+    /* position: relative; */
 }
 
 .full-part-1 {
@@ -746,8 +748,30 @@ margin-top: 10px;
     background-color: #efeae3;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    /* min-height: fit-content; */
   }
 
+  .text-scr{
+    margin-top: 150px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* margin-left: 300px; */
+    left: 260px;
+  }
+  .text-scr h1{
+    width: 100%;
+    font-size: 6vw;
+    color: black;
+    text-transform: uppercase;
+    line-height: 2.5;
+    font-family: neu;
+    font-weight: 600;
+    cursor: pointer;
+
+  }
 
   
 #center{
@@ -760,7 +784,7 @@ margin-top: 10px;
     justify-content: space-between;
     border-bottom: 1px solid #000000bb;
     padding-bottom: 10vw;
-    padding: 10vw 5vw;
+    padding: 5vw 5vw;
     position: relative;
     z-index: 9;
 
@@ -770,16 +794,18 @@ margin-top: 10px;
 }
 
 #left h3{
+    padding-top: 10px;
     width: 88%;
-    font-size: 5.6vw;
-    line-height: 6vw;
+    font-size: 4.6vw;
+    line-height: 5vw;
     font-family: neu;
 }
 
 #center h1{
-    font-size: 17vw;
+    margin-top: 20px;
+    font-size: 12vw;
     text-align: right;
-    line-height: 15vw;
+    line-height: 11vw;
     font-family: neu;
     /* padding-bottom: 100px; */
 }
@@ -1098,7 +1124,7 @@ display: inline-block;
 .footer-left h3{
     font-weight: 600;
     cursor: pointer;
-    font-size: 45px;
+    font-size: 30px;
 }
 #footer-div .footer-right{
     color: white;
@@ -1147,14 +1173,16 @@ input:focus{
 }
 
 #footer-bottom .footer-btm2{
-    margin-top: 10vw;
+    margin-top:6vw;
     color: white;
     display: flex;
+    flex-direction: column-reverse;
     /* justify-content: space-between; */
     padding: 0vw 2vw;
 }
 #footer-bottom .footer-btm2 h3{
-    font-size: 12px;
+    font-size:22px;
+    line-height: 1.8;
     font-family: neu;
     font-weight: 300;
 }
@@ -1170,7 +1198,7 @@ input:focus{
 }
 
 #hero-01{
-    height: 60%;
+    height: 50%;
     width: 100%;
     background-color: #fe302a;
     border-top-right-radius: 60%;
@@ -1192,7 +1220,7 @@ input:focus{
     animation-iteration-count: infinite;
 }
 #hero-03{
-    height: 50vh;
+    height: 30vh;
     width: 100%;
     background:linear-gradient(#fe302a,#fe3f0a);
 border-radius: 50%;
